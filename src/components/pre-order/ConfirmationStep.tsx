@@ -53,13 +53,13 @@ const ConfirmationStep = ({ data }: ConfirmationStepProps) => {
               <h3 className="font-medium text-gray-800 mb-2">Products Requested</h3>
               <div className="space-y-2 text-gray-600">
                 {data.dinnerNapkins.quantity && (
-                  <p>🧻 <strong>Dinner Napkins:</strong> {getDisplayQuantity(data.dinnerNapkins)} cartons</p>
+                  <p><strong>Dinner Napkins:</strong> {getDisplayQuantity(data.dinnerNapkins)} cartons</p>
                 )}
                 {data.kitchenRolls.quantity && (
-                  <p>🧼 <strong>Kitchen Rolls:</strong> {getDisplayQuantity(data.kitchenRolls)} rolls</p>
+                  <p><strong>Multi-Purpose Cleaning Wipes:</strong> {getDisplayQuantity(data.kitchenRolls)} rolls</p>
                 )}
                 {data.compressedTowels.quantity && (
-                  <p>💧 <strong>Compressed Towels:</strong> {getDisplayQuantity(data.compressedTowels)} towels</p>
+                  <p><strong>Compressed Towels:</strong> {getDisplayQuantity(data.compressedTowels)} towels</p>
                 )}
                 {!hasSelectedProducts && (
                   <p className="text-gray-500 italic">No products selected</p>
@@ -83,7 +83,7 @@ const ConfirmationStep = ({ data }: ConfirmationStepProps) => {
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 text-orange-600 mb-2" />
               <p className="font-medium">Kaavya Parikh</p>
-              <p className="text-gray-600">info@zuccaco.com</p>
+              <p className="text-gray-600">info@zuccaco.com.au</p>
             </div>
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 text-orange-600 mb-2" />

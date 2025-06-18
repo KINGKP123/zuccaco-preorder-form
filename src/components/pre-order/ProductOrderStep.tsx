@@ -43,10 +43,9 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🧻 Dinner Napkins</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Dinner Napkins</h3>
                 <p className="text-gray-600 mb-2">2-ply, 40cm x 40cm, 1200 per carton</p>
                 <p className="text-orange-600 font-medium text-lg">$36.50 – $40.00 per carton (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 500 cartons (shared across clients)</p>
               </div>
             </div>
             
@@ -78,14 +77,13 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
             </div>
           </div>
 
-          {/* Kitchen Rolls */}
+          {/* Multi-Purpose Cleaning Wipes */}
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🧼 Kitchen Rolls</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Multi-Purpose Cleaning Wipes</h3>
                 <p className="text-gray-600 mb-2">65gsm, 30x50 cm, 90 sheets per roll, 45m roll</p>
                 <p className="text-orange-600 font-medium text-lg">$13.00 – $15.00 per roll (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 1,500 rolls (shared across clients)</p>
               </div>
             </div>
             
@@ -96,7 +94,7 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
                 onValueChange={(value) => handleProductUpdate('kitchenRolls', 'quantity', value)}
                 className="grid grid-cols-2 md:grid-cols-3 gap-3"
               >
-                {['100', '500', '1000', '1500', '3000', '5000+', 'other'].map((option) => (
+                {['100', '500', '1000', '3000', '5000+', 'other'].map((option) => (
                   <div key={option} className="flex items-center space-x-2 border rounded-lg p-3 hover:bg-gray-50">
                     <RadioGroupItem value={option} id={`rolls-${option}`} />
                     <Label htmlFor={`rolls-${option}`} className="cursor-pointer font-medium">
@@ -121,10 +119,9 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">💧 Compressed Towels</h3>
-                <p className="text-gray-600 mb-2">Expands with water, 24x24cm</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Compressed Towels</h3>
+                <p className="text-gray-600 mb-2">Expands with water, 22x24cm</p>
                 <p className="text-orange-600 font-medium text-lg">$0.13 – $0.15 per unit (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 120,000 towels (shared across clients)</p>
               </div>
             </div>
             
