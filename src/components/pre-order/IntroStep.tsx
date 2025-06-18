@@ -12,8 +12,8 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
       <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Pre-Order with <span className="text-orange-600">Zucca & Co.</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-serif" style={{ fontFamily: 'EB Garamond, serif' }}>
+            Pre-Order with <span style={{ color: '#0e0e0e' }}>Zucca & Co.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-6">
             Secure your first batch of high-quality essentials at cost-effective prices
@@ -27,7 +27,7 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
         {/* Main content */}
         <div className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Zucca & Co. is now taking pre-orders for napkins, kitchen rolls, and compressed towels — designed for hospitality, priced better than wholesale.
+            Zucca & Co. is now taking pre-orders for napkins, multi-purpose cleaning wipes, and compressed towels — designed for hospitality, priced better than wholesale.
           </h2>
           <p className="text-lg text-gray-600">
             No payment required. We'll confirm everything before processing your order.
@@ -37,17 +37,17 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="text-center p-6 border border-gray-200 rounded-lg">
-            <ShoppingCart className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+            <ShoppingCart className="w-12 h-12 mx-auto mb-4" style={{ color: '#0e0e0e' }} />
             <h3 className="font-semibold text-gray-800 mb-2">Reserve Your Stock</h3>
             <p className="text-gray-600">Secure your products at pre-order pricing before general availability</p>
           </div>
           <div className="text-center p-6 border border-gray-200 rounded-lg">
-            <Clock className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+            <Clock className="w-12 h-12 mx-auto mb-4" style={{ color: '#0e0e0e' }} />
             <h3 className="font-semibold text-gray-800 mb-2">No Rush</h3>
             <p className="text-gray-600">Take your time to review. We'll confirm all details before processing</p>
           </div>
           <div className="text-center p-6 border border-gray-200 rounded-lg">
-            <Package className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+            <Package className="w-12 h-12 mx-auto mb-4" style={{ color: '#0e0e0e' }} />
             <h3 className="font-semibold text-gray-800 mb-2">Premium Quality</h3>
             <p className="text-gray-600">High-quality products designed specifically for hospitality venues</p>
           </div>
@@ -57,7 +57,8 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
         <Button 
           onClick={onNext}
           size="lg"
-          className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg font-medium"
+          className="text-white px-8 py-3 text-lg font-medium"
+          style={{ backgroundColor: '#0e0e0e' }}
         >
           Start Your Pre-Order
         </Button>

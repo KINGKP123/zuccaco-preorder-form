@@ -108,7 +108,8 @@ const BusinessDetailsStep = ({ data, onUpdate, onNext, onPrev }: BusinessDetails
           <Button 
             onClick={onNext}
             disabled={!isFormValid}
-            className="bg-orange-600 hover:bg-orange-700 flex items-center gap-2"
+            className="text-white flex items-center gap-2"
+            style={{ backgroundColor: '#0e0e0e' }}
           >
             Continue
             <ArrowRight className="w-4 h-4" />

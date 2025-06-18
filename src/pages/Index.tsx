@@ -58,27 +58,33 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50">
-      <div className="container mx-auto px-4 py-8">
-        {/* Progress indicator */}
-        {currentStep > 0 && currentStep < 5 && (
-          <div className="max-w-2xl mx-auto mb-8">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-600">Step {currentStep} of 4</span>
-              <span className="text-sm text-gray-600">{Math.round((currentStep / 4) * 100)}% Complete</span>
+    <>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-4 py-8">
+          {/* Progress indicator */}
+          {currentStep > 0 && currentStep < 5 && (
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-sm text-gray-600">Step {currentStep} of 4</span>
+                <span className="text-sm text-gray-600">{Math.round((currentStep / 4) * 100)}% Complete</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div 
+                  className="bg-gray-900 h-2 rounded-full transition-all duration-300"
+                  style={{ width: `${(currentStep / 4) * 100}%` }}
+                ></div>
+              </div>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2">
-              <div 
-                className="bg-orange-500 h-2 rounded-full transition-all duration-300"
-                style={{ width: `${(currentStep / 4) * 100}%` }}
-              ></div>
-            </div>
-          </div>
-        )}
-        
-        {steps[currentStep]}
+          )}
+          
+          {steps[currentStep]}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

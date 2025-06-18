@@ -43,10 +43,9 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🧻 Dinner Napkins</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Dinner Napkins</h3>
                 <p className="text-gray-600 mb-2">2-ply, 40cm x 40cm, 1200 per carton</p>
-                <p className="text-orange-600 font-medium text-lg">$36.50 – $40.00 per carton (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 500 cartons (shared across clients)</p>
+                <p className="font-medium text-lg" style={{ color: '#0e0e0e' }}>$36.50 – $40.00 per carton (ex. GST)</p>
               </div>
             </div>
             
@@ -78,14 +77,13 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
             </div>
           </div>
 
-          {/* Kitchen Rolls */}
+          {/* Multi-Purpose Cleaning Wipes */}
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">🧼 Kitchen Rolls</h3>
-                <p className="text-gray-600 mb-2">65gsm, 30x50 cm, 90 sheets per roll, 45m roll</p>
-                <p className="text-orange-600 font-medium text-lg">$13.00 – $15.00 per roll (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 1,500 rolls (shared across clients)</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Multi-Purpose Cleaning Wipes</h3>
+                <p className="text-gray-600 mb-2">65gsm, 30x50cm, 90 sheets per roll, 45m roll</p>
+                <p className="font-medium text-lg" style={{ color: '#0e0e0e' }}>$13.00 – $15.00 per roll (ex. GST)</p>
               </div>
             </div>
             
@@ -121,10 +119,9 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
           <div className="border border-gray-200 rounded-lg p-6">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">💧 Compressed Towels</h3>
-                <p className="text-gray-600 mb-2">Expands with water, 24x24cm</p>
-                <p className="text-orange-600 font-medium text-lg">$0.13 – $0.15 per unit (ex. GST)</p>
-                <p className="text-sm text-gray-500">📦 Supplier MOQ: 120,000 towels (shared across clients)</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Compressed Towels</h3>
+                <p className="text-gray-600 mb-2">Expands with water, 22x24cm</p>
+                <p className="font-medium text-lg" style={{ color: '#0e0e0e' }}>$0.13 – $0.15 per unit (ex. GST)</p>
               </div>
             </div>
             
@@ -169,7 +166,8 @@ const ProductOrderStep = ({ data, onUpdate, onNext, onPrev }: ProductOrderStepPr
           <Button 
             onClick={onNext}
             disabled={!hasAnySelection()}
-            className="bg-orange-600 hover:bg-orange-700 flex items-center gap-2"
+            className="text-white flex items-center gap-2"
+            style={{ backgroundColor: '#0e0e0e' }}
           >
             Continue
             <ArrowRight className="w-4 h-4" />
