@@ -43,7 +43,7 @@ const AdditionalNotesStep = ({ data, onUpdate, onNext, onPrev }: AdditionalNotes
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 className="font-medium text-blue-900 mb-2">What happens next?</h3>
+            <h3 className="font-medium text-blue-900 mb-2">💡 What happens next?</h3>
             <ul className="text-sm text-blue-800 space-y-1">
               <li>• We'll review your pre-order request within 24 hours</li>
               <li>• Our team will contact you to confirm pricing and availability</li>
@@ -64,8 +64,7 @@ const AdditionalNotesStep = ({ data, onUpdate, onNext, onPrev }: AdditionalNotes
           </Button>
           <Button 
             onClick={onNext}
-            className="text-white flex items-center gap-2"
-            style={{ backgroundColor: '#0e0e0e' }}
+            className="bg-orange-600 hover:bg-orange-700 flex items-center gap-2"
           >
             Complete Pre-Order
             <ArrowRight className="w-4 h-4" />

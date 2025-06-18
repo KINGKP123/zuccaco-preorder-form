@@ -53,13 +53,13 @@ const ConfirmationStep = ({ data }: ConfirmationStepProps) => {
               <h3 className="font-medium text-gray-800 mb-2">Products Requested</h3>
               <div className="space-y-2 text-gray-600">
                 {data.dinnerNapkins.quantity && (
-                  <p><strong>Dinner Napkins:</strong> {getDisplayQuantity(data.dinnerNapkins)} cartons</p>
+                  <p>🧻 <strong>Dinner Napkins:</strong> {getDisplayQuantity(data.dinnerNapkins)} cartons</p>
                 )}
                 {data.kitchenRolls.quantity && (
-                  <p><strong>Multi-Purpose Cleaning Wipes:</strong> {getDisplayQuantity(data.kitchenRolls)} rolls</p>
+                  <p>🧼 <strong>Kitchen Rolls:</strong> {getDisplayQuantity(data.kitchenRolls)} rolls</p>
                 )}
                 {data.compressedTowels.quantity && (
-                  <p><strong>Compressed Towels:</strong> {getDisplayQuantity(data.compressedTowels)} towels</p>
+                  <p>💧 <strong>Compressed Towels:</strong> {getDisplayQuantity(data.compressedTowels)} towels</p>
                 )}
                 {!hasSelectedProducts && (
                   <p className="text-gray-500 italic">No products selected</p>
@@ -77,21 +77,21 @@ const ConfirmationStep = ({ data }: ConfirmationStepProps) => {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 mb-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Us Anytime</h3>
           <div className="grid md:grid-cols-3 gap-4 text-center">
             <div className="flex flex-col items-center">
-              <Mail className="w-8 h-8 mb-2" style={{ color: '#0e0e0e' }} />
+              <Mail className="w-8 h-8 text-orange-600 mb-2" />
               <p className="font-medium">Kaavya Parikh</p>
-              <p className="text-gray-600">info@zuccaco.com.au</p>
+              <p className="text-gray-600">info@zuccaco.com</p>
             </div>
             <div className="flex flex-col items-center">
-              <Phone className="w-8 h-8 mb-2" style={{ color: '#0e0e0e' }} />
+              <Phone className="w-8 h-8 text-orange-600 mb-2" />
               <p className="font-medium">Phone</p>
               <p className="text-gray-600">0426 787 472</p>
             </div>
             <div className="flex flex-col items-center">
-              <MapPin className="w-8 h-8 mb-2" style={{ color: '#0e0e0e' }} />
+              <MapPin className="w-8 h-8 text-orange-600 mb-2" />
               <p className="font-medium">Service Area</p>
               <p className="text-gray-600">Australia wide</p>
             </div>
@@ -103,8 +103,7 @@ const ConfirmationStep = ({ data }: ConfirmationStepProps) => {
           <Button 
             onClick={() => window.location.reload()}
             size="lg"
-            className="text-white px-8 py-3"
-            style={{ backgroundColor: '#0e0e0e' }}
+            className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3"
           >
             Submit Another Pre-Order
           </Button>
