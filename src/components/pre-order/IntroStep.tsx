@@ -1,14 +1,12 @@
-
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, Package, Clock } from 'lucide-react';
-
 interface IntroStepProps {
   onNext: () => void;
 }
-
-const IntroStep = ({ onNext }: IntroStepProps) => {
-  return (
-    <div className="max-w-4xl mx-auto text-center">
+const IntroStep = ({
+  onNext
+}: IntroStepProps) => {
+  return <div className="max-w-4xl mx-auto text-center">
       <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
         {/* Header */}
         <div className="mb-8">
@@ -26,9 +24,7 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
 
         {/* Main content */}
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Zucca & Co. is now taking pre-orders for napkins, kitchen rolls, and compressed towels — designed for hospitality, priced better than wholesale.
-          </h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Zucca & Co. is now taking pre-orders for napkins, multi purpose cleaning wipes, and compressed towels — designed for hospitality, priced better than wholesale.</h2>
           <p className="text-lg text-gray-600">
             No payment required. We'll confirm everything before processing your order.
           </p>
@@ -54,16 +50,10 @@ const IntroStep = ({ onNext }: IntroStepProps) => {
         </div>
 
         {/* CTA */}
-        <Button 
-          onClick={onNext}
-          size="lg"
-          className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg font-medium"
-        >
+        <Button onClick={onNext} size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg font-medium">
           Start Your Pre-Order
         </Button>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default IntroStep;
