@@ -7,7 +7,7 @@ const IntroStep = ({
   onNext
 }: IntroStepProps) => {
   return <div className="max-w-4xl mx-auto text-center">
-      <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+      <div className="rounded-xl shadow-lg p-8 md:p-12 bg-white">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
