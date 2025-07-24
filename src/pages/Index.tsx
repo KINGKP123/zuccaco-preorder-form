@@ -36,7 +36,7 @@ const Index = () => {
         {/* Progress indicator */}
         {currentStep > 0 && currentStep < 5 && <div className="max-w-2xl mx-auto mb-8">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-600">Step {currentStep} of 4</span>
+              <span className="text-sm text-white">Step {currentStep} of 4</span>
               <span className="text-sm text-gray-600">{Math.round(currentStep / 4 * 100)}% Complete</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2">
