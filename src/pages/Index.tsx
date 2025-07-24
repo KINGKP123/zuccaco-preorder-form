@@ -32,7 +32,7 @@ const Index = () => {
   });
   const steps = [<IntroStep key="intro" onNext={() => setCurrentStep(1)} />, <BusinessDetailsStep key="business" data={preOrderData} onUpdate={setPreOrderData} onNext={() => setCurrentStep(2)} onPrev={() => setCurrentStep(0)} />, <VenueDetailsStep key="venue" data={preOrderData} onUpdate={setPreOrderData} onNext={() => setCurrentStep(3)} onPrev={() => setCurrentStep(1)} />, <ProductOrderStep key="products" data={preOrderData} onUpdate={setPreOrderData} onNext={() => setCurrentStep(4)} onPrev={() => setCurrentStep(2)} />, <AdditionalNotesStep key="notes" data={preOrderData} onUpdate={setPreOrderData} onNext={() => setCurrentStep(5)} onPrev={() => setCurrentStep(3)} />, <ConfirmationStep key="confirmation" data={preOrderData} />];
   return <div className="min-h-screen bg-emerald-950">
-      <div className="container mx-auto px-4 py-8 bg-emerald-950">
+      <div className="container mx-auto px-4 py-8 bg-neutral-50">
         {/* Progress indicator */}
         {currentStep > 0 && currentStep < 5 && <div className="max-w-2xl mx-auto mb-8">
             <div className="flex items-center justify-between mb-2">
